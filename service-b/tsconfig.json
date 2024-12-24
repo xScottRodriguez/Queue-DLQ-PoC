@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Define la versión de JavaScript generada
+    "module": "CommonJS", // Usado comúnmente en Node.js
+    "strict": true, // Habilita todas las verificaciones estrictas
+    "esModuleInterop": true, // Necesario para importar módulos CommonJS con `import`
+    "moduleResolution": "node", // Resolve módulos como lo hace Node.js
+    "outDir": "./dist", // Carpeta de salida para los archivos compilados
+    "rootDir": "./src", // Carpeta base para los archivos fuente
+    "resolveJsonModule": true, // Permite importar archivos JSON
+    "skipLibCheck": true // Omite la verificación de declaraciones de tipos en node_modules
+  },
+  "include": [
+    "src/**/*"
+  ], // Incluye todos los archivos .ts en src
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Excluye node_modules y la carpeta de salida
+}
